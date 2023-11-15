@@ -5,7 +5,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -87,7 +89,14 @@ fun DataFrom(
             },
             label = { Text(text = "Pekerjaan")}
         )
-
-
+        Button(
+            onClick = { 
+                goToNextPage(listData)
+            }, modifier = Modifier
+                .fillMaxWidth()
+                .padding(30.dp)
+        ) {
+            Text(text = "Next")
+        }
     }
 }
