@@ -66,6 +66,14 @@ fun DataFrom(
             },
             label = { Text(text = "Nama")}
         )
+        OutlinedTextField(
+            value = txtUmur,
+            onValueChange = {
+                txtUmur = it
+            } ,
+            label = { Text(text = "Umur")}
+        )
+
 
     }
 }
